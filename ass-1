@@ -1,0 +1,13 @@
+def isprime(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+def countpr(p):
+    return len(p)
+n=int(input('enter:'))    
+p=[i for i in range(2,n+1) if isprime(i)]
+print(countpr(p))
+OUTPUT:
+enter:50
+15
